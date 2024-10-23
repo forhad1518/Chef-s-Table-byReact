@@ -1,9 +1,21 @@
+import Banner from "./components/header/Banner";
+import Header from "./components/header/Header";
+import Recipes from "./components/main/Recipes";
+
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      {/* Header Container */}
+      <header>
+        <Header></Header>
+        <Banner></Banner>
+      </header>
+      <br />
+      <br />
+      <main>
+        {/* Our Recipes */}
+        <Recipes></Recipes>
+      </main>
     </div>
   );
 };
